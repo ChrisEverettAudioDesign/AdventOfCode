@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include <algorithm> 
+#include <algorithm>
+#include <numeric>
 
 
 using namespace std;
@@ -17,9 +18,7 @@ void listStorage()
 	char symbolInput;
 	int characterPostion = 0;
 	int globalCharacterPosition = 0;
-
-
-
+	int coordinateGlobalSum = 0;
 
 	while (inputFile.get(symbolInput))
 	{
@@ -42,9 +41,13 @@ void listStorage()
 			characterPostion++;
 			globalCharacterPosition++;  //mainly a debug variable can probably be ommited 
 	}
+	
+	// This last sort function outside of the loop is because the last 5 numbers weren't being caught by the logic. (I haven't got a clue why)
 
+	sort(leftList.begin() + leftList.size() - 5, leftList.begin() + leftList.size());
+	sort(rightList.begin() + rightList.size() - 5, rightList.begin() + rightList.size());
 
-	for (int itr = 0; itr < leftList.size(); itr++)
+	for (int itr = 0; itr != rightList.size(); itr++)
 	{
 		if (leftList.at(itr) < rightList.at(itr))
 		{
@@ -54,11 +57,20 @@ void listStorage()
 		{
 			coordinateSum.push_back(leftList.at(itr) - rightList.at(itr));
 		}
+		
 	}
 
+	// Could the last 5 numbers not be getting added properly?
+
+	cout << leftList.size() << endl;
+	cout << rightList.size() << endl;
+
+	coordinateGlobalSum = accumulate(coordinateSum.begin(), coordinateSum.end(), coordinateGlobalSum);
 	
 	inputFile.close();
 
+
+	cout << coordinateGlobalSum << endl;
 }
 
 
