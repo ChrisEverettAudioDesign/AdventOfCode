@@ -12,6 +12,7 @@ void listStorage()
 	ifstream inputFile("inputfile.txt");
 	vector<char> leftList;
 	vector<char> rightList;
+	vector<int> coordinateSum;
 
 	char symbolInput;
 	int characterPostion = 0;
@@ -34,13 +35,27 @@ void listStorage()
 			else if (characterPostion == 13)
 			{
 				characterPostion = -1;
-				sort (leftList.begin() + globalCharacterPosition, leftList.begin() + globalCharacterPosition + 5);
-				sort (rightList.begin() + globalCharacterPosition, rightList.begin() + globalCharacterPosition + 5);
+				sort (leftList.begin() + leftList.size() - 5, leftList.begin() + leftList.size());
+				sort (rightList.begin() + rightList.size() - 5, rightList.begin() + rightList.size());
 			}
 			else {}
 			characterPostion++;
-			globalCharacterPosition++;
+			globalCharacterPosition++;  //mainly a debug variable can probably be ommited 
 	}
+
+
+	for (int itr = 0; itr < leftList.size(); itr++)
+	{
+		if (leftList.at(itr) < rightList.at(itr))
+		{
+			coordinateSum.push_back(rightList.at(itr) - leftList.at(itr));
+		}
+		else
+		{
+			coordinateSum.push_back(leftList.at(itr) - rightList.at(itr));
+		}
+	}
+
 	
 	inputFile.close();
 
