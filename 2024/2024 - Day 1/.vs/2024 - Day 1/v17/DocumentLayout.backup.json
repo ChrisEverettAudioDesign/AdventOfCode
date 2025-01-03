@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Saman\\Documents\\GitHub\\AdventOfCode\\2024\\2024 - Day 1\\",
+  "WorkspaceRootPath": "E:\\Code\\AdventOfCode\\2024\\2024 - Day 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64381E4A-3485-4EBD-8490-499AEA3DC3F0}|2024 - Day 1.vcxproj|C:\\Users\\Saman\\Documents\\GitHub\\AdventOfCode\\2024\\2024 - Day 1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{64381E4A-3485-4EBD-8490-499AEA3DC3F0}|2024 - Day 1.vcxproj|E:\\Code\\AdventOfCode\\2024\\2024 - Day 1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{64381E4A-3485-4EBD-8490-499AEA3DC3F0}|2024 - Day 1.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64381E4A-3485-4EBD-8490-499AEA3DC3F0}|2024 - Day 1.vcxproj|C:\\Users\\Saman\\Documents\\GitHub\\AdventOfCode\\2024\\2024 - Day 1\\inputfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{64381E4A-3485-4EBD-8490-499AEA3DC3F0}|2024 - Day 1.vcxproj|E:\\Code\\AdventOfCode\\2024\\2024 - Day 1\\inputfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{64381E4A-3485-4EBD-8490-499AEA3DC3F0}|2024 - Day 1.vcxproj|solutionrelative:inputfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Saman\\Documents\\GitHub\\AdventOfCode\\2024\\2024 - Day 1\\main.cpp",
+              "DocumentMoniker": "E:\\Code\\AdventOfCode\\2024\\2024 - Day 1\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\Saman\\Documents\\GitHub\\AdventOfCode\\2024\\2024 - Day 1\\main.cpp",
+              "ToolTip": "E:\\Code\\AdventOfCode\\2024\\2024 - Day 1\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEYAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-25T10:58:33.814Z",
               "EditorCaption": ""
@@ -37,11 +37,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "inputfile.txt",
-              "DocumentMoniker": "C:\\Users\\Saman\\Documents\\GitHub\\AdventOfCode\\2024\\2024 - Day 1\\inputfile.txt",
+              "DocumentMoniker": "E:\\Code\\AdventOfCode\\2024\\2024 - Day 1\\inputfile.txt",
               "RelativeDocumentMoniker": "inputfile.txt",
-              "ToolTip": "C:\\Users\\Saman\\Documents\\GitHub\\AdventOfCode\\2024\\2024 - Day 1\\inputfile.txt",
+              "ToolTip": "E:\\Code\\AdventOfCode\\2024\\2024 - Day 1\\inputfile.txt",
               "RelativeToolTip": "inputfile.txt",
-              "ViewState": "AgIAAOEDAAAAAAAAAAAAAOcDAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAMQDAAAAAAAAAADwv+cDAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-12-25T11:38:41.334Z",
               "EditorCaption": ""
