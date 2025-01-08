@@ -19,32 +19,35 @@ void safeReports()
 	string line;
 
 	const int lineCount = 1000;
-	int lineLength = 0;
+	int numberCount = 0;
+	int num = 0;
 	int numOfSafeReports = 0;
-	int itr = 0;
+	
 
 	// Count the number of intergers in the line.
 	while (getline(inputFile, line))
 	{
-		lineLength = 0;
 		istringstream inputString(line);
-		while (inputString >> line)
+		while (inputString >> num)
 		{
-			lineLength++;
+			reportInput.push_back(num);
 		}
+
+		for (int itr = 0; itr <= reportInput.size(); itr++)
+		{
+			if (abs(reportInput.at(itr) - reportInput.at(itr + 1)) > 3 || abs(reportInput.at(itr) - reportInput.at(itr + 1)) == 0)
+			{
+				break;
+			}
+
+		}
+		
+
 	}
 
 
-	for (int index = 0; index < lineCount; index++)
-	{
-		for (int length = 0; length < lineLength; length++)
-		{
-			int num = 0;
-			inputFile >> num;
-			reportInput.push_back(num);
 
-
-		}
+		
 
 		
 		
@@ -53,8 +56,7 @@ void safeReports()
 			All are increasing or decreasing
 			All levels should increase between 1 and 3
 		*/
-	}
-	
+								
 	inputFile.close();
 
 
