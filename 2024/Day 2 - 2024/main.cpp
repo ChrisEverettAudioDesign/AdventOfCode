@@ -22,6 +22,7 @@ void safeReports()
 	int numberCount = 0;
 	int num = 0;
 	int numOfSafeReports = 0;
+	bool absFail = false;
 	
 
 	// Count the number of intergers in the line.
@@ -33,35 +34,37 @@ void safeReports()
 			reportInput.push_back(num);
 		}
 
-		for (int itr = 0; itr <= reportInput.size(); itr++)
+		for (int itr = 0; itr < reportInput.size() - 1; itr++)
 		{
-			if (abs(reportInput.at(itr) - reportInput.at(itr + 1)) > 3 || abs(reportInput.at(itr) - reportInput.at(itr + 1)) == 0)
+			int absResult = 0;
+			absFail = false;
+			absResult = abs(reportInput[itr] - reportInput[itr+1]);
+			
+			if (absResult > 3 || absResult == 0)
 			{
+				absFail = true;
 				break;
 			}
-
 		}
-		
 
+		if (is_sorted(reportInput.begin(), reportInput.end()) == true && absFail == false)
+		{
+			numOfSafeReports++;
+		}
+		else if (is_sorted(reportInput.rbegin(), reportInput.rend()) == true && absFail == false)
+		{
+			numOfSafeReports++;
+		}
+		else
+		{ }
+
+		reportInput.clear();
+		
 	}
 
-
-
-		
-
-		
-		
-		/*
-			Analyze Numbers
-			All are increasing or decreasing
-			All levels should increase between 1 and 3
-		*/
+	cout << numOfSafeReports << endl;
 								
 	inputFile.close();
-
-
-
-
 
 }
 
