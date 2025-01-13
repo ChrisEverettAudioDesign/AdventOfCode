@@ -35,9 +35,6 @@ void safeReports()
 			reportInput.push_back(num);
 		}
 
-
-
-
 		for (int itr = 0; itr < reportInput.size() - 1; itr++)
 		{
 			
@@ -70,11 +67,11 @@ void safeReports()
 		{
 			numOfSafeReports++;
 		}
-		else if (is_sorted(reportInput.begin(), reportInput.end()) == false && numOfAbsFails <= 1)
+		else if (is_sorted(reportInput.begin(), reportInput.end()) == false)
 		{
 			numOfSafeReports++;
 		}
-		else if (is_sorted(reportInput.rbegin(), reportInput.rend()) == false && numOfAbsFails <= 1)
+		else if (is_sorted(reportInput.rbegin(), reportInput.rend()) == false)
 		{
 			numOfSafeReports++;
 		}
